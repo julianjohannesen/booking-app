@@ -1,9 +1,10 @@
 import './App.css';
+import BookablesPage from './Bookables/BookablesPage';
 
 function App() {
   return (
     <div className="App">
-      Huzzah!
+      <BookablesPage/>
     </div>
   );
 }
