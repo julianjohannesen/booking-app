@@ -8,8 +8,13 @@ export default function BookablesList () {
   // Filter for an array of "Rooms"
   const bookablesInGroup = bookables.filter(bookable => bookable.group === group);
   
-  // Hard code the bookableIndex for now
-  const bookableIndex = 1;
+  // Initial value for the bookableIndex
+  let bookableIndex = 1;
+
+  function changeBookable(selectedIndex){
+    bookableIndex = selectedIndex;
+    console.log(selectedIndex);
+  }
  
   return (
     <ul className="bookables items-list-nav">
@@ -20,6 +25,7 @@ export default function BookablesList () {
         >
           <button
             className="btn"
+            onClick={()=>changeBookable(index)}
           >
             {bookable.title}
           </button>
