@@ -1,5 +1,6 @@
 import {useState} from 'react';
-import {bookables} from "../../static.json";
+import data from "../../static.json";
+const {bookables} = data;
  
 export default function BookablesList () {
 

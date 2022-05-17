@@ -1,7 +1,10 @@
 import {useState} from "react";
-import {users} from "../../static.json";
+import data from "../../static.json";
+const {users} = data;
 
 export default function UsersList(){
+
+    console.log("The full data ", data, "and just the users ", users);
 
     const [userIndex, setUserIndex] = useState(1);
 

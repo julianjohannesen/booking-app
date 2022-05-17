@@ -1,5 +1,6 @@
 import {useState} from "react";
-import {users} from "../../static.json";
+import data from "../../static.json";
+const {users} = data;
 
 export default function UserPicker () {
 
